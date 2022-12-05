@@ -4,7 +4,22 @@
   // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
-  
+    {
+      "name": "Open Firefox",
+      "type": "firefox",
+      "request": "launch",
+      "reAttach": true,
+      "url": "http://localhost:5500",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Open Chrome",
+      "request": "launch",
+      "type": "chrome",
+      "url": "http://localhost:5500",
+      "webRoot": "${workspaceFolder}"
+    },
+
     {
       "type": "vscode-edge-devtools.debug",
       "request": "launch",
