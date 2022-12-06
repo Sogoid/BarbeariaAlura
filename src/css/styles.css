@@ -7,17 +7,17 @@ body {
   padding: 0;
 }
 
-.cabecalho{
-display: flex;
-align-items: center;
+.cabecalho {
+  display: flex;
+  align-items: center;
 }
 
-#menu{
-
+#menu {
+    
 }
 
-.titulo{
-    margin-left: 1.25rem;
+.titulo {
+  margin-left: 1.25rem;
 }
 
 #banner {
@@ -56,7 +56,7 @@ p em strong {
   background: #fff;
 }
 
-ul {
+.text-beneficios {
   padding-top: 1.25rem;
   display: inline-block;
   vertical-align: top;
