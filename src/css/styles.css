@@ -7,13 +7,36 @@ body {
   padding: 0;
 }
 
+#logo-cabecalho {
+  width: 5.25rem;
+  margin-left: 1.375rem;
+}
+
 .cabecalho {
   display: flex;
   align-items: center;
+  background: #bbbbbb;
+  color: chocolate;
+  font-size: 1.375rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+nav{
+  position: absolute;
+  margin-left: 62.5rem;
 }
 
-#menu {
-    
+nav ul li {
+  display: inline-flex;
+  padding: 0.5rem;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.375rem;
+  text-decoration: none;
 }
 
 .titulo {
@@ -62,6 +85,7 @@ p em strong {
   vertical-align: top;
   margin-right: 15%;
   width: 20%;
+  font-weight: bold;
 }
 
 .itens {
