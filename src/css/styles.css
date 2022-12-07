@@ -6,12 +6,6 @@
 body {
   padding: 0;
 }
-
-#logo-cabecalho {
-  width: 5.25rem;
-  margin-left: 1.375rem;
-}
-
 .cabecalho {
   display: flex;
   align-items: center;
@@ -21,7 +15,13 @@ body {
   text-transform: uppercase;
   font-weight: bold;
 }
-nav{
+
+#logo-cabecalho {
+  width: 5.25rem;
+  margin-left: 1.375rem;
+}
+
+nav {
   position: absolute;
   margin-left: 62.5rem;
 }
@@ -44,6 +44,7 @@ nav ul li a {
 }
 
 #banner {
+  margin-top: 0;
   width: 100%;
 }
 
