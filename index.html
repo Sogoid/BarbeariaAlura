@@ -15,12 +15,33 @@
     <header class="cabecalho">
         <img id="logo-cabecalho" src="/src/img/logo.png" alt="Barbearia Alura">
         <h1 class="titulo">Barbearia&nbsp; Alura</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="/src/page/produtos.html">Galeria</a></li>
-                <li><a href="/src/page/contato.html">Contato</a></li>
-            </ul>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <!--
+                Uma caixa de seleção falsa/oculta é usada como receptor de cliques,
+                então você pode usar o seletor :checked nele.
+                -->
+                <input type="checkbox" />
+                <!--
+                    Alguns vãos para atuar como um hambúrguer.
+                    
+                    Eles estão agindo como um verdadeiro hambúrguer,
+                    não aquela coisa do McDonalds.
+                    -->
+                <span></span>
+                <span></span>
+                <span></span>
+                <!--
+                    Pena que o menu tem que ficar dentro do botão
+                    mas ei, é pura magia CSS.
+                    -->
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/src/page/produtos.html">Preço</a></li>
+                    <li><a href="/src/page/produtos.html">Galeria</a></li>
+                    <li><a href="/src/page/contato.html">Contato</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <section>
@@ -72,6 +93,30 @@
                 </span>
             </div>
         </div>
+    </section>
+    <section>
+        <ul class="itensProduto">
+            <li>
+                <h2>Cabelo</h2>
+                <img src="/src/img/cabelo.jpg" alt="Cabelo">
+                <p class="pProduto">Na tesoura ou na máquina, como o cliente preferir. </p>
+                <R1>R$ 25,00</R1>
+
+            </li>
+            <li>
+                <h2>Barba</h2>
+                <img src="/src/img/barba.jpg" alt="Barba">
+                <p class="pProduto">Corte e desenho profissional para barba</p>
+                <r1>R$ 18,00</r1>
+            </li>
+            <li>
+                <h2>Cabelo + Barba</h2>
+                <img src="/src/img/cabelo+barba.jpg" alt="Cabelo + Barba">
+                <p class="pProduto">Pacote completo para cabelo e barba</p>
+                <R1>R$ 35,00</R1>
+            </li>
+        </ul>
+
     </section>
     <section>
         <div>
