@@ -248,7 +248,8 @@ body {
 }
 
 footer {
-  background: #bbbbbb;
+  display: flex;
+  background: url("/src/img/bg.jpg");
   border: 0.05rem solid black;
   margin-bottom: 0;
   margin-left: 0;
@@ -256,8 +257,15 @@ footer {
   padding: 1.25rem;
   margin-top: 1.5rem;
 }
-.footer {
-  text-size-adjust: 8px;
+.logo-footer {
+  display: inline-flex;
+  width: 5.25rem;
+  margin-left: 1.375rem;
+}
+
+.footer p {
+  display: inline-flex;
+  font-size: 20px;
   text-align: center;
   color: chocolate;
   text-transform: uppercase;
