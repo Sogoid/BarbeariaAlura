@@ -31,11 +31,11 @@ body {
   padding: 0.5rem;
 }
 
-#menu li a {
+#menu a {
   text-transform: uppercase;
   color: #000000;
   font-weight: bold;
-  font-size: 1.375rem;
+  font-size: 1.875rem;
   text-decoration: none;
 }
 #menu a:hover {
@@ -46,6 +46,7 @@ body {
 }
 
 #titulo {
+  font-size: 1.875rem;
   margin-left: 1.25rem;
   display: inline-block;
   border-right: 2px solid #000;
@@ -66,7 +67,7 @@ body {
   }
 }
 
-#banner {
+.banner {
   margin-top: 0;
   width: 100%;
 }
@@ -82,7 +83,7 @@ body {
   border: 0.05rem solid black;
   background: #bbbbbb;
   color: chocolate;
-  font-size: 1.375rem;
+  font-size: 30px;
   text-transform: uppercase;
   font-weight: bold;
   padding: 0.5rem;
@@ -160,17 +161,45 @@ body {
   text-align: center;
   width: 30%;
   vertical-align: top;
-  border: 0.25rem solid black;
+  border: 5px solid black;
   border-radius: 10%;
+  margin: 0 1.5%;
+  padding: 25px 20px;
+  box-sizing: border-box;
 }
-.itensProduto h2 {
-  text-size-adjust: 20px;
-  text-align: center;
+.itensProduto li:hover {
+  border-top-width: 10px;
+  border-color: chocolate;
   color: chocolate;
+}
+.itensProduto li:active {
+  border-color: chocolate;
+}
+
+.itensProduto h2 {
+  font-size: 25px;
+  text-align: center;
+  color: #000;
   text-transform: uppercase;
   font-weight: bold;
   padding-top: 30px;
   padding-bottom: 0;
+}
+.itensProduto li:hover h2 {
+  border-top-width: 10px;
+  border-color: chocolate;
+  color: chocolate;
+}
+
+.itensProduto p {
+  font-size: 1.375rem;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.itensProduto R1 {
+  font-size: 1.575rem;
+  font-weight: bold;
 }
 
 #beneficios {
@@ -178,20 +207,22 @@ body {
   margin-bottom: 1.25rem;
 }
 
-p {
+.texto-sobre p {
   text-align: center;
   color: black;
+  font-size: 23px;
 }
 
 #missao {
-  font-size: 1.25rem;
+  font-size: 28px;
+  text-align: center;
 }
 
-p strong {
+.texto-sobre p strong {
   color: chocolate;
 }
 
-p em strong {
+.texto-sobre p em strong {
   color: red;
 }
 
@@ -205,6 +236,7 @@ p em strong {
   margin-right: 15%;
   width: 20%;
   font-weight: bold;
+  font-size: 25px;
 }
 
 .itens {
