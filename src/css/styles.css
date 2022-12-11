@@ -258,9 +258,8 @@ body {
 
 .itens {
   display: flex;
-  margin-left: 30%;
+  margin-left: 28%;
   font-style: italic;
-   
 }
 
 .imgbeneficios {
@@ -279,6 +278,11 @@ body {
     width: 100%;
     margin-left: 20px;
   }
+  .itens {
+    display: flex;
+    margin-left: 0;
+    font-style: italic;
+  }
   .text-beneficios li {
     display: inline-flex;
   }
@@ -293,6 +297,9 @@ body {
 }
 
 .footer p {
+  margin-left: 520px;
+  margin-right: 510px;
+  margin-bottom: 15px;
   font-size: 11px;
   color: chocolate;
   text-transform: uppercase;
@@ -306,12 +313,17 @@ body {
 @media (max-width: 768px) {
   .logo-footer {
     margin-top: 15px;
+    
   }
   .footer {
     margin-top: 10px;
     text-align: center;
   }
   .footer p {
+    font-size: 13px;
+    margin-top: 12px;
+    margin-left: 10px;
+    margin-right: 5px;
     margin-bottom: 15px;
   }
 }
