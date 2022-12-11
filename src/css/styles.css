@@ -13,6 +13,7 @@ body {
 }
 .cabecalho {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background: #bbbbbb;
   color: chocolate;
@@ -21,11 +22,7 @@ body {
   font-weight: bold;
 }
 .cabecalho h1 {
-  display: inline-flex;
-  
   font-size: 1.875rem;
-  margin-left: 1.25rem;
-  display: inline-block;
   border-right: 2px solid #000;
   padding-right: 3px;
   max-width: 0;
@@ -36,12 +33,10 @@ body {
 
 .cabecalho img {
   width: 5.25rem;
-  margin-left: 1.375rem;
 }
 
 .menu li {
   display: inline-flex;
-  
   padding: 0.5rem;
 }
 
@@ -247,30 +242,40 @@ body {
   width: 50%;
 }
 
-footer {
+.footer {
   display: flex;
+  
   background: url("/src/img/bg.jpg");
   border: 0.05rem solid black;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
   padding: 1.25rem;
   margin-top: 1.5rem;
 }
 .logo-footer {
-  display: inline-flex;
-  width: 5.25rem;
-  margin-left: 1.375rem;
+  display: ;
+    width: 5.25rem;
 }
 
 .footer p {
-  display: inline-flex;
-  font-size: 20px;
+ 
+  font-size: 11px;
   color: chocolate;
   text-transform: uppercase;
   font-weight: bold;
   max-width: 0;
   white-space: nowrap;
   overflow: hidden;
-  animation: pisca normal infinite 0.8s, escrever normal 5s steps(55) infinite;
+  animation: pisca normal infinite 0.8s, escrever normal 5s steps(90) infinite;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    display: flex;
+        align-items: center;
+  }
+  .logo-footer{
+    justify-content: center;
+  }
+  .footer p{
+
+  }
 }

@@ -1,3 +1,6 @@
 {
-  "recommendations": ["ms-ceintl.vscode-language-pack-pt-br"]
+  "recommendations": [
+    "ms-ceintl.vscode-language-pack-pt-br",
+    "ms-vscode.mono-debug"
+  ]
 }
