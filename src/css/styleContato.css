@@ -1,3 +1,31 @@
+@import "style.css";
+
 main{
-    
+    width: 940px;
+    margin: 0 auto;
+}
+.formDados {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 40px 0;
+}
+.formDados label {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.formDados input{
+padding: 5px;
+}
+
+.divBtnEnviar {
+  display: flex;
+  justify-content: center;
+}
+.btnEnviar {
+  background: var(--segundaria-color);
+  color: var(--primaria-color);
+  width: 125px;
+  margin-top: 20px;
+  border-radius: 15px;
 }
