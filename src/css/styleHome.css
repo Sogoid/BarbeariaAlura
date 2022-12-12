@@ -1,72 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-  padding: 0;
-  line-height: 1;
-}
-.cabecalho {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background: url("/src/img/bg.jpg");
-  color: white;
-  font-size: 1.375rem;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.cabecalho h1 {
-  display: flex;
-  font-size: 1.875rem;
-  border-right: 2px solid #000;
-  padding-right: 3px;
-  max-width: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: pisca normal infinite 0.8s, escrever normal 5s steps(55) infinite;
-}
-
-.cabecalho img {
-  margin: 0;
-  width: 5.25rem;
-}
-
-.menu li {
-  display: inline-flex;
-  padding: 0.5rem;
-}
-
-.menu li a {
-  text-transform: uppercase;
-  color: white;
-  font-weight: bold;
-  font-size: 1.875rem;
-  text-decoration: none;
-}
-.menu a:hover {
-  color: tomato;
-}
-@media (max-width: 768px) {
-  .menu li a {
-    font-size: 18px;
-  }
-}
-@keyframes pisca {
-  100% {
-    border-right-color: transparent;
-  }
-}
-@keyframes escrever {
-  100% {
-    max-width: 100%;
-  }
-}
-
 .banner {
   margin-top: 0;
   width: 100%;
@@ -80,9 +11,9 @@ body {
 .title-galery {
   display: block;
   text-align: center;
-  border: 0.05rem solid black;
-  background: url("/src/img/bg.jpg");
-  color: chocolate;
+  border: 0.05rem solid var(--quarta-color);
+  background: var(--background-primario);
+  color: var(--segundaria-color);
   font-size: 30px;
   text-transform: uppercase;
   font-weight: bold;
@@ -113,11 +44,11 @@ body {
 }
 .item-galeria .title-galeria {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--backgroud-color);
   left: 0;
   bottom: 0;
   width: 100%;
-  color: white;
+  color: var(--primaria-color);
   padding: 10px;
   font-size: 16pt;
   font-family: "Quicksand";
@@ -167,7 +98,7 @@ body {
   text-align: center;
   width: 30%;
   vertical-align: top;
-  border: 5px solid black;
+  border: 5px solid var(--border-color);
   border-radius: 10%;
   margin: 0 1.5%;
   padding: 25px 20px;
@@ -176,18 +107,18 @@ body {
 .itensProduto li:hover {
   border-top-width: 10px;
   border-bottom: 40px;
-  border-color: chocolate;
-  color: chocolate;
+  border-color: var(--segundaria-color);
+  color: var(--segundaria-color);
   padding: 22px;
 }
 .itensProduto li:active {
-  border-color: chocolate;
+  border-color: var(--segundaria-color);
 }
 
 .itensProduto h2 {
   font-size: 25px;
   text-align: center;
-  color: #000;
+  color: var(--quarta-color);
   text-transform: uppercase;
   font-weight: bold;
   padding-top: 30px;
@@ -195,14 +126,14 @@ body {
 }
 .itensProduto li:hover h2 {
   border-top-width: 10px;
-  border-color: chocolate;
-  color: chocolate;
+  border-color: var(--segundaria-color);
+  color: var(--segundaria-color);
 }
 
 .itensProduto p {
   font-size: 1.375rem;
   margin-bottom: 15px;
-  color: #000;
+  color: var(--quarta-color);
 }
 
 .itensProduto R1 {
@@ -234,7 +165,7 @@ body {
 .texto-sobre p {
   margin-top: 1.25rem;
   text-align: center;
-  color: black;
+  color: var(--quarta-color);
   font-size: 23px;
 }
 
@@ -244,15 +175,15 @@ body {
 }
 
 .texto-sobre p strong {
-  color: chocolate;
+  color: var(--segundaria-color);
 }
 
 .texto-sobre p em strong {
-  color: red;
+  color: var(--terceira-color);
 }
 
 .beneficios {
-  background: #fff;
+  background: var(--primaria-color);
 }
 
 .text-beneficios {
@@ -309,62 +240,37 @@ body {
   width: 5.25rem;
 }
 
-@media screen and (max-width: 888px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .btnVoltar {
+    font-size: 13px;
+    margin-top: 12px;
+    margin-left: 10px;
+    margin-right: 800px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 851px) {
+  .btnVoltar {
+    font-size: 13px;
+    margin-top: 12px;
+    margin-left: 15px;
+    margin-right: 12px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .btnVoltar {
+    display: flex;
+    justify-content: end;
+  }
   .btnVoltar img {
     padding: 0;
     position: fixed;
     top: 90%;
     width: 70px;
     right: 40px;
-    margin-bottom: 15px;
-  }
-}
-.footer {
-  text-align: center;
-  background: url("/src/img/bg.jpg");
-  border: 0.05rem solid black;
-}
-.logo-footer {
-  width: 5.25rem;
-}
-
-.footer p {
-  margin-left: 520px;
-  margin-right: 510px;
-  margin-bottom: 15px;
-  font-size: 11px;
-  color: chocolate;
-  text-transform: uppercase;
-  font-weight: bold;
-  max-width: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: pisca normal infinite 0.8s, escrever normal 5s steps(90) infinite;
-}
-
-@media screen and (min-width: 768px) {
-  .footer p {
-    font-size: 13px;
-    margin-top: 12px;
-    margin-left: 750px;
-    margin-right: 776px;
-    margin-bottom: 15px;
-  }
-}
-
-@media screen and (min-width: 375px) and (max-width: 480px) {
-  .logo-footer {
-    margin-top: 15px;
-  }
-  .footer {
-    margin-top: 10px;
-    text-align: center;
-  }
-  .footer p {
-    font-size: 13px;
-    margin-top: 12px;
-    margin-left: 10px;
-    margin-right: 5px;
     margin-bottom: 15px;
   }
 }

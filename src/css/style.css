@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  /* Palheta de cores*/
+  --primaria-color: white;
+  --segundaria-color: chocolate;
+  --terceira-color: red;
+  --quarta-color: black;
+  --backgroud-color: rgba(0, 0, 0, 0.8);
+  --border-color: black;
+  /*Final da Palheta de cores*/
+  /* Backgrounds*/
+  --background-primario: url("/src/img/bg.jpg");
+}
+
+body {
+  padding: 0;
+}

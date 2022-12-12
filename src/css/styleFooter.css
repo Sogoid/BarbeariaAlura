@@ -1,0 +1,61 @@
+@import "style.css";
+
+.footer {
+  text-align: center;
+  background: var(--background-primario);
+  border: 0.05rem solid var(--border-color);
+}
+.logo-footer {
+  width: 5.25rem;
+}
+
+.footer p {
+  margin-left: 520px;
+  margin-right: 510px;
+  margin-bottom: 15px;
+  font-size: 11px;
+  color: var(--segundaria-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  max-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: pisca normal infinite 0.8s, escrever normal 5s steps(90) infinite;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+   .footer p {
+    font-size: 13px;
+    margin-top: 12px;
+    margin-left: 10px;
+    margin-right: 800px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 851px) {
+  .footer p {
+    font-size: 13px;
+    margin-top: 12px;
+    margin-left: 15px;
+    margin-right: 12px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .logo-footer {
+    margin-top: 15px;
+  }
+  .footer {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .footer p {
+    font-size: 12px;
+    margin-top: 12px;
+    margin-left: 8px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+  }
+}
