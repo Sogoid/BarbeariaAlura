@@ -12,16 +12,19 @@
 </head>
 
 <body>
-    <header class="cabecalho">
+
+    <header id="cabecalho" class="cabecalho">
         <img src="/src/img/logo-branco.png" alt="Barbearia Alura">
         <h1>Barbearia&nbsp; Alura</h1>
         <nav class="menu">
             <div>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="/src/page/produtos.html">Preço</a></li>
-                    <li><a href="/src/page/produtos.html">Galeria</a></li>
-                    <li><a href="/src/page/contato.html">Contato</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#valores">Preço</a></li>
+                    <li><a href="#galery">Galeria</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#">Contato</a></li>
                 </ul>
             </div>
         </nav>
@@ -30,7 +33,7 @@
         <img class="banner" src="/src/img/banner.jpg" alt="Banner">
     </section>
     <section class="galery">
-        <div class="title-galery">GALERIA DE CORTES E BARBAS </div>
+        <div id="galery" class="title-galery">GALERIA DE CORTES E BARBAS </div>
         <div class="container-galeria">
             <div class="item-galeria w-2 h-2">
                 <img src="/src/img/barba e cabelo (1).jpg" alt="" class="img-galeria">
@@ -77,7 +80,7 @@
         </div>
     </section>
     <section>
-        <h2 class="title-galery"> Valores do corte de Cabelo e Barba</h2>
+        <h2 id="valores" class="title-galery"> Valores do corte de Cabelo e Barba</h2>
         <ul class="itensProduto">
             <li>
                 <h2>Cabelo</h2>
@@ -103,7 +106,7 @@
     <section>
         <div class="texto-sobre">
 
-            <h2 id="beneficios" class="title-galery"> Sobre a Barbearia Alura </h2>
+            <h2 id="sobre" class="title-galery"> Sobre a Barbearia Alura </h2>
 
             <p> Localizada no coração da cidade a <strong> Barbearia Alura </strong>traz para o
                 mercado o que há de
@@ -131,6 +134,11 @@
                 <li class="itens"><span>&bull;</span>&nbsp;Localização</li>
             </ul>
             <img class="imgbeneficios" src="/src/img/beneficios.jpg" alt="Barba">
+        </div>
+    </section>
+    <section>
+        <div class="btnVoltar">
+           <a  href="#cabecalho"><img src="/src/img/back1.png" alt="BotãoVoltar"></a>
         </div>
     </section>
     <footer>
