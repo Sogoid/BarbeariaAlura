@@ -2,7 +2,7 @@
 
 .footer {
   text-align: center;
-  background: var(--background-primario);
+  background-image: var(--background-primario);
   border: 0.05rem solid var(--border-color);
 }
 .logo-footer {
@@ -24,7 +24,7 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
-   .footer p {
+  .footer p {
     font-size: 13px;
     margin-top: 12px;
     margin-left: 10px;
