@@ -1,9 +1,11 @@
+@import style.css;
+
 .cabecalho {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background: url("src/img/bg.jpg");
+  background: var(--background-primario);
   color: var(--primaria-color);
   font-size: 1.375rem;
   text-transform: uppercase;
