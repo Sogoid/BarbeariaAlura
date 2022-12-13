@@ -15,7 +15,7 @@
   --border-color: black;
   /*Final da Palheta de cores*/
   /* Backgrounds*/
-  --background-primario: repeating-conic-gradient(red 10%, yellow 20%);
+  --background-primario: url("../img/bg.jpg");
 }
 
 body {
