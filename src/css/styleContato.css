@@ -1,23 +1,44 @@
 @import "style.css";
 
-main{
-    width: 940px;
-    margin: 0 auto;
+main {
+  width: 940px;
+  margin: 0 auto;
 }
 .formDados {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 45%;
   margin: 40px 0;
 }
-.formDados label {
-  font-size: 20px;
-  margin-top: 10px;
+.formDados label,
+.sectRadio p {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
-.formDados input{
-padding: 5px;
+.formDados input {
+  padding: 5px;
+  margin-bottom: 10px;
 }
-
+#cxTextoArea{
+  margin-bottom: 15px;
+}
+.chkRadio {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.chkRadio label {
+  font-size: 17.5px;
+  font-weight: normal;
+  text-transform: none;
+  margin-right: 15%;
+}
+.chkNewLallter label {
+  font-size: 17.5px;
+  font-weight: normal;
+  text-transform: none;
+}
 .divBtnEnviar {
   display: flex;
   justify-content: center;
@@ -25,7 +46,8 @@ padding: 5px;
 .btnEnviar {
   background: var(--segundaria-color);
   color: var(--primaria-color);
-  width: 125px;
+  width: 160px;
   margin-top: 20px;
+  border: none;
   border-radius: 15px;
 }

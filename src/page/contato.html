@@ -39,8 +39,26 @@
             <input type="text" id="email">
             <label for="telefone">Telefone:</label>
             <input type="text" id="telefone">
+            <label for="cxTextoArea">Descrição:</label>
+            <textarea name="cxTexto" id="cxTextoArea" cols="30" rows="10"></textarea>
+            <section class="sectRadio">
+                <p>Como prefere o nosso contato?</p>
+                <div class="chkRadio">
+                    <label for="radio-whatsapp">
+                        <input type="radio" name="contato" value="whatsapp">WhatsApp</label>
+                    <label for="radio-telefone">
+                        <input type="radio" name="contato" value="telefone">Telefone</label>
+                    <label for="radio-email">
+                        <input type="radio" name="contato" value="email">Email</label>
+                </div>
+                <div class="chkNewLallter">
+                    <label for="">
+                        <input type="checkbox">&nbsp; Gostaria de receber nossas novidades por
+                        e-mail?</label>
+                </div>
+            </section>
             <div class="divBtnEnviar">
-                <input class="btnEnviar" type="submit" value="Enviar Formulário">
+                <input class="btnEnviar" type="submit" value="ENVIAR FORMULÁRIO">
             </div>
         </form>
 
