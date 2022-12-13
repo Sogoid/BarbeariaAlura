@@ -15,7 +15,7 @@
   --border-color: black;
   /*Final da Palheta de cores*/
   /* Backgrounds*/
-  --background-primario: url("src/img/bg.jpg");
+  --background-primario: url("/src/img/bg.jpg");
 }
 
 body {
