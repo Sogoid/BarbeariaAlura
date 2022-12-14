@@ -4,14 +4,14 @@ main {
   width: 940px;
   margin: 0 auto;
 }
+
 .formDados {
   display: flex;
   flex-direction: column;
   width: 45%;
   margin: 40px 0;
 }
-.formDados label,
-.sectRadio p {
+.formDados label {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
@@ -20,7 +20,7 @@ main {
   padding: 5px;
   margin-bottom: 10px;
 }
-#cxTextoArea{
+#cxTextoArea {
   margin-bottom: 15px;
 }
 .chkRadio {
@@ -34,6 +34,11 @@ main {
   text-transform: none;
   margin-right: 15%;
 }
+#chkSelect {
+  width: 25%;
+  padding: 5px;
+}
+
 .chkNewLallter label {
   font-size: 17.5px;
   font-weight: normal;
@@ -46,8 +51,13 @@ main {
 .btnEnviar {
   background: var(--segundaria-color);
   color: var(--primaria-color);
-  width: 160px;
-  margin-top: 20px;
+  width: 200px;
   border: none;
-  border-radius: 15px;
+  border-radius: 20px;
+}
+.btnEnviar:hover {
+  background: var(--hover-color-bg);
+  width: 250px;
+  padding: 10px 0;
+  margin: 0;
 }

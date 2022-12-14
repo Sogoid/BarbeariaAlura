@@ -20,7 +20,7 @@
         <nav class="menu">
             <div>
                 <ul>
-                    <li><a href="/BarbeariaAlura/">Home</a></li>
+                    <li><a href="../../index.html">Home</a></li>
                     <li><a href="../../index.html#valores">Preço</a></li>
                     <li><a href="../../index.html#galery">Galeria</a></li>
                     <li><a href="../../index.html#sobre">Sobre</a></li>
@@ -32,31 +32,43 @@
     <main class="contanair">
         <form class="formDados" action="">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome">
+            <input type="text" id="nome" required placeholder="Digite seu Nome">
             <label for="sobrenome">Sobrenome:</label>
-            <input type="text" id="sobrenome">
+            <input type="text" id="sobrenome" required placeholder="Digite seu Sobrenome">
             <label for="email">E-mail:</label>
-            <input type="text" id="email">
+            <input type="email" id="email" required placeholder="exemplo@dominio.com">
             <label for="telefone">Telefone:</label>
-            <input type="text" id="telefone">
+            <input type="tel" id="telefone" required placeholder="(XX) XXXX-XXXX">
             <label for="cxTextoArea">Descrição:</label>
-            <textarea name="cxTexto" id="cxTextoArea" cols="30" rows="10"></textarea>
-            <section class="sectRadio">
-                <p>Como prefere o nosso contato?</p>
+            <textarea name="cxTexto" id="cxTextoArea" cols="30" rows="10" required
+                placeholder="Digite aqui sua mensagem.."></textarea>
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
                 <div class="chkRadio">
                     <label for="radio-whatsapp">
-                        <input type="radio" name="contato" value="whatsapp">WhatsApp</label>
+                        <input type="radio" name="contato" value="whatsapp" checked>WhatsApp</label>
                     <label for="radio-telefone">
                         <input type="radio" name="contato" value="telefone">Telefone</label>
                     <label for="radio-email">
                         <input type="radio" name="contato" value="email">Email</label>
                 </div>
-                <div class="chkNewLallter">
-                    <label for="">
-                        <input type="checkbox">&nbsp; Gostaria de receber nossas novidades por
-                        e-mail?</label>
-                </div>
-            </section>
+            </fieldset>
+            </br>
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select name="chkSelect" id="chkSelect">
+                    <option value="Manhã" selected>☀️&nbsp;Manhã</opition>
+                    <option value="Tarde">🌅&nbsp;Tarde</option>
+                    <option value="Noite">🌜&nbsp;Noite</option>
+                </select>
+            </fieldset>
+            </br>
+            <div class="chkNewLallter">
+                <label for="">
+                    <input type="checkbox" checked>&nbsp; Gostaria de receber nossas novidades por
+                    e-mail?</label>
+            </div>
+            </br>
             <div class="divBtnEnviar">
                 <input class="btnEnviar" type="submit" value="ENVIAR FORMULÁRIO">
             </div>
