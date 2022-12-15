@@ -1,7 +1,8 @@
 @import "style.css";
 
 main {
-  width: 940px;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -76,4 +77,20 @@ main {
 .btnEnviar:hover {
   background: var(--hover-color-bg);
   transform: scale(1.2);
+}
+.tabHorario {
+  padding: 5px;
+  border: 1px solid #000000;
+  margin-bottom: 20px;
+  margin-left: 8%;
+}
+.tabHorario thead {
+  
+  color: var(--primaria-color);
+  font-weight: bold;
+  background: var(--background-primario);
+}
+.tabHorario td {
+  border: 1px solid #000000;
+  padding: 6px 15px;
 }
