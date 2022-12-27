@@ -1,15 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 :root {
   /* Palheta de cores*/
   --primaria-color: white;
   --segundaria-color: chocolate;
-  --hover-color-bg:orange;
+  --hover-color-bg: orange;
   --terceira-color: red;
   --quarta-color: black;
   --backgroud-color: rgba(0, 0, 0, 0.8);

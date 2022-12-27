@@ -30,54 +30,65 @@
         </nav>
     </header>
     <main class="contanair">
-        <form class="formDados" action="">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" required placeholder="Digite seu Nome">
-            <label for="sobrenome">Sobrenome:</label>
-            <input type="text" id="sobrenome" required placeholder="Digite seu Sobrenome">
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" required placeholder="exemplo@dominio.com">
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" required placeholder="(XX) XXXX-XXXX">
-            <label for="cxTextoArea">Descrição:</label>
-            <textarea name="cxTexto" id="cxTextoArea" cols="30" rows="10" required
-                placeholder="Digite aqui sua mensagem.."></textarea>
-            <fieldset>
-                <legend>Como prefere o nosso contato?</legend>
-                <div class="chkRadio">
-                    <label for="radio-whatsapp">
-                        <input type="radio" name="contato" value="whatsapp" checked>WhatsApp</label>
-                    <label for="radio-telefone">
-                        <input type="radio" name="contato" value="telefone">Telefone</label>
-                    <label for="radio-email">
-                        <input type="radio" name="contato" value="email">Email</label>
+        <section class="main-contanair">
+            <form class="formDados" action="">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required placeholder="Digite seu Nome">
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" required placeholder="Digite seu Sobrenome">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required placeholder="exemplo@dominio.com">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" required placeholder="(XX) XXXX-XXXX">
+                <label for="cxTextoArea">Descrição:</label>
+                <textarea name="cxTexto" id="cxTextoArea" cols="30" rows="10" required
+                    placeholder="Digite aqui sua mensagem.."></textarea>
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
+                    <div class="chkRadio">
+                        <label for="radio-whatsapp">
+                            <input type="radio" name="contato" value="whatsapp" checked>WhatsApp</label>
+                        <label for="radio-telefone">
+                            <input type="radio" name="contato" value="telefone">Telefone</label>
+                        <label for="radio-email">
+                            <input type="radio" name="contato" value="email">Email</label>
+                    </div>
+                </fieldset>
+                </br>
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <section class="horario">
+                        <input type="date" name="Data" id="calendario">
+                        <select name="chkSelect" id="chkSelect">
+                            <option value="Manhã" selected>☀️&nbsp;Manhã</opition>
+                            <option value="Tarde">🌅&nbsp;Tarde</option>
+                            <option value="Noite">🌜&nbsp;Noite</option>
+                        </select>
+                    </section>
+                </fieldset>
+                </br>
+                <div class="chkNewLallter">
+                    <label for="">
+                        <input type="checkbox" checked>&nbsp; Gostaria de receber nossas novidades por
+                        e-mail?</label>
                 </div>
-            </fieldset>
-            </br>
-            <fieldset>
-                <legend>Qual horário prefere ser atendido?</legend>
-                <section class="horario">
-                    <input type="date" name="Data" id="calendario">
-                    <select name="chkSelect" id="chkSelect">
-                        <option value="Manhã" selected>☀️&nbsp;Manhã</opition>
-                        <option value="Tarde">🌅&nbsp;Tarde</option>
-                        <option value="Noite">🌜&nbsp;Noite</option>
-                    </select>
-                </section>
-            </fieldset>
-            </br>
-            <div class="chkNewLallter">
-                <label for="">
-                    <input type="checkbox" checked>&nbsp; Gostaria de receber nossas novidades por
-                    e-mail?</label>
-            </div>
-            </br>
-            <div class="divBtnEnviar">
-                <input class="btnEnviar" type="submit" value="ENVIAR FORMULÁRIO">
-            </div>
-        </form>
-        
+                </br>
+                <div class="divBtnEnviar">
+                    <input class="btnEnviar" type="submit" value="ENVIAR FORMULÁRIO">
+                </div>
+            </form>
+
+            <section class="mapa">
+                <h3 class="titulo-pricipal">Nosso estabeliciemnto</h3>
+                <p>Nosso estabeliciemnto esta localizado no coração da cidade.</p>
+                <div><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4416024620787!2d-46.63692487007124!3d-23.588490419432336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ba6816fe839%3A0xda8627521b8e4b90!2sAlura!5e0!3m2!1spt-BR!2sbr!4v1672108406302!5m2!1spt-BR!2sbr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </section>
+        </section>
         <table class="tabHorario">
+            <caption>Horário de funcionamento.</caption>
             <thead>
                 <tr>
                     <th>Dia</th>
@@ -99,8 +110,6 @@
                 </tr>
             </tbody>
         </table>
-
-
     </main>
     <footer>
         <div class="footer">

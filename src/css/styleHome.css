@@ -6,22 +6,22 @@
 /*CSS DA GALERIA*/
 .galery {
   padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
-.title-galery {
+.galery h2 {
   display: block;
   text-align: center;
   border: 0.05rem solid var(--quarta-color);
   background: var(--background-primario);
   color: var(--segundaria-color);
-  font-size: 30px;
+  font-size: 2em;
   text-transform: uppercase;
   font-weight: bold;
   padding: 0.5rem;
 }
+
 @media (max-width: 768px) {
   .title-galery {
-    font-size: 20px;
+    font-size: 2em;
   }
 }
 
@@ -50,8 +50,7 @@
   width: 100%;
   color: var(--primaria-color);
   padding: 10px;
-  font-size: 16pt;
-  font-family: "Quicksand";
+  font-size: 1.7em;
 }
 
 .h-1 {
@@ -90,7 +89,7 @@
 .itensProduto {
   width: 940px;
   margin: 0 auto;
-  padding: 50px 0;
+  padding-top: 1.5rem;
 }
 
 .itensProduto li {
@@ -115,7 +114,7 @@
   border-color: var(--segundaria-color);
 }
 
-.itensProduto h2 {
+.itensProduto h3 {
   font-size: 25px;
   text-align: center;
   color: var(--quarta-color);
@@ -124,10 +123,20 @@
   padding-top: 30px;
   padding-bottom: 0;
 }
-.itensProduto li:hover h2 {
+.itensProduto li:hover h3 {
   border-top-width: 10px;
   border-color: var(--segundaria-color);
   color: var(--segundaria-color);
+}
+
+.itensProduto strong {
+  color: var(--segundaria-color);
+}
+
+.itensProduto li:hover strong {
+  border-top-width: 10px;
+  border-color: var(--segundaria-color);
+  color: var(--terceira-color);
 }
 
 .itensProduto p {
@@ -136,7 +145,7 @@
   color: var(--quarta-color);
 }
 
-.itensProduto R1 {
+.preco {
   font-size: 1.575rem;
   font-weight: bold;
 }
@@ -151,27 +160,21 @@
   .itensProduto li {
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
   }
   .itensProduto h2 {
     padding-top: 0;
   }
 }
-#beneficios {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+
+.texto-sobre {
+  clear: left;
+  padding: 0 10%;
 }
 
 .texto-sobre p {
-  margin-top: 1.25rem;
-  text-align: center;
+  margin-top: 1em;
   color: var(--quarta-color);
-  font-size: 23px;
-}
-
-#missao {
-  font-size: 28px;
-  text-align: center;
+  font-size: 1.3em;
 }
 
 .texto-sobre p strong {
@@ -179,11 +182,14 @@
 }
 
 .texto-sobre p em strong {
+  font-size: 1.2em;
   color: var(--terceira-color);
 }
 
-.beneficios {
-  background: var(--primaria-color);
+.utensilios {
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
 }
 
 .text-beneficios {
@@ -194,6 +200,7 @@
   width: 30%;
   font-weight: bold;
   font-size: 25px;
+  padding-top: 1.5rem;
 }
 
 .itens {
@@ -203,7 +210,8 @@
 }
 
 .imgbeneficios {
-  width: 50%;
+  padding-top: 1.5rem;
+  width: 30%;
 }
 @media (max-width: 768px) {
   .imgbeneficios {
