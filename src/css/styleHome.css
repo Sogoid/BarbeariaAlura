@@ -25,7 +25,7 @@
   padding: 0.5rem;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .title-galery {
     font-size: 2em;
   }
@@ -75,7 +75,7 @@
   grid-column: span 2;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .container-galeria {
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: 50vh;
@@ -156,7 +156,7 @@
   font-weight: bold;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .itensProduto {
     padding-left: 15%;
   }
@@ -198,7 +198,6 @@
 }
 
 .text-beneficios {
-  vertical-align: top;
   font-weight: bold;
   font-size: 25px;
 }
@@ -224,7 +223,16 @@
   height: 100%;
 }
 
-@media (max-width: 768px) {
+.btnVoltar img {
+  cursor: pointer;
+  padding: 10px;
+  position: fixed;
+  top: 90%;
+  right: 40px;
+  width: 5.25rem;
+}
+
+@media screen and (max-width: 600px) {
   .text-beneficios {
     padding-left: 1.5rem;
     width: 100%;
@@ -242,22 +250,27 @@
     padding-left: 0;
     height: 120%;
   }
-}
 
-.btnVoltar {
-  display: flex;
-  justify-content: end;
+  .btnVoltar img {
+    cursor: pointer;
+    position: fixed;
+    top: 90%;
+    width: 5.25rem;
+  }
 }
-.btnVoltar img {
-  cursor: pointer;
-  padding: 10px;
-  position: fixed;
-  top: 90%;
-  right: 40px;
-  width: 5.25rem;
-}
-@media (max-width: 768px) {
-  .btnVoltar {
-    display: inline-block;
+@media (orientation: landscape) {
+  .conteudo-beneficio {
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .text-beneficios {
+    width: 30%;
+    font-size: 1em;
+    margin-left: 1.5rem;
+  }
+
+  .video iframe {
+    width: 280px;
+    height: 100%;
   }
 }
