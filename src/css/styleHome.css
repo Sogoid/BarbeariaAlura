@@ -1,3 +1,9 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .banner {
   margin-top: 0;
   width: 100%;
@@ -152,14 +158,13 @@
 
 @media (max-width: 768px) {
   .itensProduto {
-    justify-content: center;
-    align-items: center;
-    padding: 12% 18% 0;
+    padding-left: 15%;
   }
 
   .itensProduto li {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
   }
   .itensProduto h2 {
     padding-top: 0;
@@ -193,48 +198,52 @@
 }
 
 .text-beneficios {
-  display: inline-flex;
-  flex-direction: column;
   vertical-align: top;
-  margin-right: 15%;
-  width: 30%;
   font-weight: bold;
   font-size: 25px;
-  padding-top: 1.5rem;
 }
 
 .itens {
-  display: flex;
-  margin-left: 28%;
   font-style: italic;
 }
 
 .imgbeneficios {
-  padding-top: 1.5rem;
-  width: 30%;
+  width: 25%;
 }
+
+.conteudo-beneficio {
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.video iframe {
+  width: 500px;
+  border: none;
+  height: 100%;
+}
+
 @media (max-width: 768px) {
-  .imgbeneficios {
-    margin-top: 30px;
+  .text-beneficios {
+    padding-left: 1.5rem;
     width: 100%;
   }
 
-  .text-beneficios {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .imgbeneficios {
     width: 100%;
-    margin-left: 20px;
+    padding-top: 1.5rem;
+    margin-right: 0%;
   }
-  .itens {
-    display: flex;
-    margin-left: 0;
-    font-style: italic;
-  }
-  .text-beneficios li {
-    display: inline-flex;
+
+  .video iframe {
+    width: 355px;
+    padding-top: 1.5rem;
+    padding-left: 0;
+    height: 120%;
   }
 }
+
 .btnVoltar {
   display: flex;
   justify-content: end;
@@ -247,38 +256,8 @@
   right: 40px;
   width: 5.25rem;
 }
-
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media (max-width: 768px) {
   .btnVoltar {
-    font-size: 13px;
-    margin-top: 12px;
-    margin-left: 10px;
-    margin-right: 800px;
-    margin-bottom: 15px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 851px) {
-  .btnVoltar {
-    font-size: 13px;
-    margin-top: 12px;
-    margin-left: 15px;
-    margin-right: 12px;
-    margin-bottom: 15px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .btnVoltar {
-    display: flex;
-    justify-content: end;
-  }
-  .btnVoltar img {
-    padding: 0;
-    position: fixed;
-    top: 90%;
-    width: 70px;
-    right: 40px;
-    margin-bottom: 15px;
+    display: inline-block;
   }
 }

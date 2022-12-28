@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header class="cabecalho">
+    <header id="cabecalho" class="cabecalho">
         <img src="src/img/logo-branco.png" alt="Barbearia Alura">
         <h1>Barbearia&nbsp; Alura</h1>
         <nav class="menu">
@@ -33,9 +33,9 @@
     <section>
         <img class="banner" src="src/img/banner.jpg" alt="Banner">
     </section>
-    <main>
+    <main class="container">
         <section class="galery">
-            <h2>GALERIA DE CORTES E BARBAS </h2>
+            <h2 id="galery">GALERIA DE CORTES E BARBAS </h2>
             <div class="container-galeria">
                 <div class="item-galeria w-2 h-2">
                     <img src="src/img/barba e cabelo (1).jpg" alt="" class="img-galeria">
@@ -82,7 +82,7 @@
             </div>
         </section>
         <section class="galery">
-            <h2> Valores do corte de Cabelo e Barba</h2>
+            <h2 id="valores"> Valores do corte de Cabelo e Barba</h2>
             <ul class="itensProduto">
                 <li>
                     <h3>Cabelo</h3>
@@ -106,7 +106,7 @@
             </ul>
         </section>
         <section class="galery">
-            <h2> Sobre a Barbearia Alura </h2>
+            <h2 id="sobre"> Sobre a Barbearia Alura </h2>
             <div class="texto-sobre">
                 <img class="utensilios" src="src/img/utensilios.jpg" alt="Utensilios de uma Barbearia.">
 
@@ -130,26 +130,30 @@
             </div>
         </section>
         <section class="galery">
-            <div>
-                <h2>Benefícios</h2>
+            <h2 id="beneficios">Benefícios</h2>
+            <div class="conteudo-beneficio">
                 <ul class="text-beneficios">
-                    <li class="itens"><span>&bull;</span>&nbsp;Profissionais Qualificados</li>
-                    <li class="itens"><span>&bull;</span>&nbsp;Atendimento aos Clientes</li>
-                    <li class="itens"><span>&bull;</span>&nbsp;Espaço diferenciado</li>
-                    <li class="itens"><span>&bull;</span>&nbsp;Localização</li>
+                    <li class="itens"><span></span>Profissionais Qualificados</li>
+                    <li class="itens"><span></span>Atendimento aos Clientes</li>
+                    <li class="itens"><span></span>Espaço diferenciado</li>
+                    <li class="itens"><span></span>Localização</li>
                 </ul>
                 <img class="imgbeneficios" src="src/img/beneficios.jpg" alt="Barba">
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY"
+                        title="Apresentação" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
         <section>
             <div class="btnVoltar">
-                <a href="#cabecalho"><img src="src/img/back1.png" alt="BotãoVoltar"></a>
+                <a href="#cabecalho"><img type="image/png " src="src/img/back1.png" alt="BotãoVoltar"></a>
             </div>
         </section>
     </main>
     <footer>
         <div class="footer">
-            <img class="logo-footer" src="src/img/logo-branco.png" alt="Logo">
+            <img class="logo-footer" type="image/png " src="src/img/logo-branco.png" alt="Logo">
             <p> © Barbearia Alura - Todos os direitos reservados.</p>
         </div>
     </footer>

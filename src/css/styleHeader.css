@@ -43,6 +43,10 @@
   color: var(--segundaria-color);
 }
 @media (max-width: 768px) {
+  .menu {
+    text-align: center;
+  }
+
   .menu li a {
     font-size: 18px;
   }
