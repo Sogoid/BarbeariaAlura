@@ -51,6 +51,12 @@
     font-size: 18px;
   }
 }
+/* Orientation */
+@media (orientation: landscape) {
+  .menu li a {
+    font-size: 28px;
+  }
+}
 @keyframes pisca {
   100% {
     border-right-color: transparent;

@@ -1,7 +1,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
 
 .banner {
@@ -196,31 +195,28 @@
   float: left;
   margin: 0 20px 20px 0;
 }
-
-.text-beneficios {
-  font-weight: bold;
-  font-size: 25px;
+.conteudo-beneficio {
+  justify-content: space-evenly;
+}
+.conteudo-beneficio ul {
+  width: 250px;
+  vertical-align: top;
 }
 
 .itens {
-  font-style: italic;
+  line-height: 1.5;
 }
 
-.imgbeneficios {
+.itens:first-child {
+  font-weight: bold;
+}
+.conteudo-beneficio img {
   width: 25%;
 }
 
-.conteudo-beneficio {
-  display: inline-flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 1rem;
-}
-
-.video iframe {
-  width: 500px;
+.conteudo-beneficio iframe {
+  width: 100%;
   border: none;
-  height: 100%;
 }
 
 .btnVoltar img {
@@ -233,44 +229,55 @@
 }
 
 @media screen and (max-width: 600px) {
-  .text-beneficios {
+  .container {
+    width: 415px;
+  }
+  .conteudo-beneficio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.5rem;
+  }
+  .conteudo-beneficio ul {
     padding-left: 1.5rem;
     width: 100%;
   }
 
-  .imgbeneficios {
+  .conteudo-beneficio img {
     width: 100%;
     padding-top: 1.5rem;
-    margin-right: 0%;
   }
 
-  .video iframe {
-    width: 355px;
+  .conteudo-beneficio iframe {
+    width: 100%;
     padding-top: 1.5rem;
-    padding-left: 0;
-    height: 120%;
   }
 
   .btnVoltar img {
     cursor: pointer;
     position: fixed;
     top: 90%;
-    width: 5.25rem;
+    width: 80px;
   }
 }
 @media (orientation: landscape) {
   .conteudo-beneficio {
-    justify-content: space-between;
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
   }
-  .text-beneficios {
-    width: 30%;
+  .conteudo-beneficio ul {
+    width: 100%;
     font-size: 1em;
-    margin-left: 1.5rem;
+    margin-left: 10%;
   }
-
-  .video iframe {
-    width: 280px;
-    height: 100%;
+  .conteudo-beneficio iframe {
+    width: 100%;
+    height: 500px;
+    padding-top: 1em;
+  }
+  .conteudo-beneficio img {
+    width: 100%;
+    padding-top: 1em;
   }
 }
