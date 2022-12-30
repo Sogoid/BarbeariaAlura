@@ -15,7 +15,9 @@
   --terceira-color: red;
   --quarta-color: black;
   --backgroud-color: rgba(0, 0, 0, 0.8);
+  --backgroud-color-Beneficios: #88888888;
   --border-color: black;
+  --background-gradiente: linear-gradient(#fefefe, #88888888);
   /*Final da Palheta de cores*/
   /* Backgrounds*/
   --background-primario: url("../img/bg.jpg");
