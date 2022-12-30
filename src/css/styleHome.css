@@ -1,8 +1,3 @@
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
 .banner {
   margin-top: 0;
   width: 100%;
@@ -196,10 +191,10 @@
   margin: 0 20px 20px 0;
 }
 .conteudo-beneficio {
-  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row !important;
 }
 .conteudo-beneficio ul {
-  width: 250px;
   vertical-align: top;
 }
 
@@ -211,12 +206,11 @@
   font-weight: bold;
 }
 .conteudo-beneficio img {
-  width: 25%;
+  width: 15% !important;
 }
-
-.conteudo-beneficio iframe {
-  width: 100%;
+.video iframe {
   border: none;
+  width: 30px;
 }
 
 .btnVoltar img {
