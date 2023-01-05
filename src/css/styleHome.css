@@ -87,11 +87,11 @@
 
 /*CSS DOS PROTUDOS*/
 .itensProduto {
+  display: flex;
   width: 940px;
   margin: 0 auto;
   padding-top: 1.5rem;
 }
-
 .itensProduto li {
   display: inline-block;
   text-align: center;
@@ -148,21 +148,6 @@
 .preco {
   font-size: 1.575rem;
   font-weight: bold;
-}
-
-@media screen and (max-width: 480px) {
-  .itensProduto {
-    padding-left: 15%;
-  }
-
-  .itensProduto li {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-  }
-  .itensProduto h2 {
-    padding-top: 0;
-  }
 }
 
 .texto-sobre {
@@ -243,8 +228,20 @@
 }
 
 @media screen and (max-width: 480px) {
- 
-  .conteudo-beneficio {
+  .itensProduto {
+    width: 100%;
+    flex-direction: column;
+  
+  }
+  .itensProduto li {
+   width: 80%;
+   margin-left: 10%;  
+   
+}
+.itensProduto .itensli{
+margin-bottom: 8%;
+}
+.conteudo-beneficio {
     display: flex;
     flex-direction: column !important;
     justify-content: center;
@@ -252,7 +249,7 @@
   }
   .conteudo-beneficio ul {
     padding-left: 1.5rem;
-    width: auto !important;
+    width: 100%;
   }
 
   .conteudo-beneficio img {
@@ -265,24 +262,26 @@
     padding-top: 1.5rem !important;
   }
 }
+/* Orientation */
 @media (orientation: landscape) {
-  .conteudo-beneficio {
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
-  }
-  .conteudo-beneficio ul {
+.itensProduto {
     width: 100%;
-    font-size: 1em;
-    margin-left: 10%;
+    }
+     .itensProduto img {
+   width: 100%; 
+}
+.conteudo-beneficio{
+padding: 5% 0 5% 0;  
+justify-content: space-around !important;
+}
+.conteudo-beneficio ul {
+  width: 30% !important;
+  margin: 0 !important;
+}
+.conteudo-beneficio img {
+    width: 15em!important;
   }
-  .conteudo-beneficio iframe {
-    width: 100%;
-    height: 500px;
-    padding-top: 1em;
-  }
-  .conteudo-beneficio img {
-    width: 100%;
-    padding-top: 1em;
+.conteudo-beneficio iframe {
+    width: 15em!important;
   }
 }
