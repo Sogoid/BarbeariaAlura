@@ -10,8 +10,8 @@
 }
 
 .footer p {
-  margin-left: 520px;
-  margin-right: 510px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 15px;
   font-size: 11px;
   color: var(--segundaria-color);
@@ -27,8 +27,7 @@
   .footer p {
     font-size: 13px;
     margin-top: 12px;
-    margin-left: 10px;
-    margin-right: 800px;
+
     margin-bottom: 15px;
   }
 }
@@ -37,8 +36,7 @@
   .footer p {
     font-size: 13px;
     margin-top: 12px;
-    margin-left: 15px;
-    margin-right: 12px;
+
     margin-bottom: 15px;
   }
 }
@@ -48,14 +46,12 @@
     margin-top: 15px;
   }
   .footer {
-    margin-top: 10px;
+    margin-top: 0;
     text-align: center;
   }
   .footer p {
     font-size: 12px;
     margin-top: 12px;
-    margin-left: 8px;
-    margin-right: 5px;
     margin-bottom: 15px;
   }
 }

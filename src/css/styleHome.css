@@ -1,283 +1,343 @@
 .banner {
-  margin-top: 0;
-  width: 100%;
+    margin-top: 0;
+    width: 100%;
 }
 
 /*CSS DA GALERIA*/
 .galery {
-  padding-top: 1.5rem;
+    padding-top: 1.5rem;
 }
 .galery h2 {
-  display: block;
-  text-align: center;
-  border: 0.05rem solid var(--quarta-color);
-  background: var(--background-primario);
-  color: var(--segundaria-color);
-  font-size: 2em;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 0.5rem;
+    display: block;
+    text-align: center;
+    border: 0.05rem solid var(--quarta-color);
+    background: var(--background-primario);
+    color: var(--segundaria-color);
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.5rem;
 }
 
 @media screen and (max-width: 480px) {
-  .title-galery {
-    font-size: 2em;
-  }
+    .title-galery {
+        font-size: 2em;
+    }
 }
 
 .container-galeria {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-auto-rows: 300px;
-  padding-top: 1.5rem;
-  grid-gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 300px;
+    padding-top: 1.5rem;
+    grid-gap: 5px;
 }
 
 .item-galeria {
-  position: relative;
+    position: relative;
 }
 
 .item-galeria .img-galeria {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .item-galeria .title-galeria {
-  position: absolute;
-  background-color: var(--backgroud-color);
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: var(--primaria-color);
-  padding: 10px;
-  font-size: 1.7em;
+    position: absolute;
+    background-color: var(--backgroud-color);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: var(--primaria-color);
+    padding: 10px;
+    font-size: 1.7em;
 }
 
 .h-1 {
-  grid-row: span 1;
+    grid-row: span 1;
 }
 
 .h-2 {
-  grid-row: span 2;
+    grid-row: span 2;
 }
 
 .w-1 {
-  grid-column: span 1;
+    grid-column: span 1;
 }
 
 .w-2 {
-  grid-column: span 2;
+    grid-column: span 2;
 }
 
 @media screen and (max-width: 480px) {
-  .container-galeria {
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 50vh;
-  }
+    .container-galeria {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 50vh;
+    }
 
-  .h-2 {
-    grid-row: span 1;
-  }
+    .h-2 {
+        grid-row: span 1;
+    }
 
-  .w-2 {
-    grid-column: span 1;
-  }
+    .w-2 {
+        grid-column: span 1;
+    }
 }
 /*FIM DO CSS DA GALERIA*/
 
 /*CSS DOS PROTUDOS*/
+.galery_itens > ul {
+    width: 940px;
+}
+.galery_itens > h2 {
+    display: block;
+    text-align: center;
+    border: 0.05rem solid var(--quarta-color);
+    background: var(--background-primario);
+    color: var(--segundaria-color);
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-top: 0.6em;
+}
 .itensProduto {
-  display: flex;
-  width: 940px;
-  margin: 0 auto;
-  padding-top: 1.5rem;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 1.5rem;
 }
 .itensProduto li {
-  display: inline-block;
-  text-align: center;
-  width: 30%;
-  vertical-align: top;
-  border: 5px solid var(--border-color);
-  border-radius: 10%;
-  margin: 0 1.5%;
-  padding: 25px 20px;
-  box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    border: 5px solid var(--border-color);
+    border-radius: 10%;
+    margin: 0 1.5%;
+    padding: 25px 20px;
+    box-sizing: border-box;
 }
 .itensProduto li:hover {
-  border-top-width: 10px;
-  border-bottom: 40px;
-  border-color: var(--segundaria-color);
-  color: var(--segundaria-color);
-  padding: 22px;
+    border-top-width: 10px;
+    border-bottom: 40px;
+    border-color: var(--segundaria-color);
+    color: var(--segundaria-color);
+    padding: 22px;
 }
 .itensProduto li:active {
-  border-color: var(--segundaria-color);
+    border-color: var(--segundaria-color);
 }
 
 .itensProduto h3 {
-  font-size: 25px;
-  text-align: center;
-  color: var(--quarta-color);
-  text-transform: uppercase;
-  font-weight: bold;
-  padding-top: 30px;
-  padding-bottom: 0;
+    font-size: 25px;
+    text-align: center;
+    color: var(--quarta-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 0;
 }
 .itensProduto li:hover h3 {
-  border-top-width: 10px;
-  border-color: var(--segundaria-color);
-  color: var(--segundaria-color);
+    border-top-width: 10px;
+    border-color: var(--segundaria-color);
+    color: var(--segundaria-color);
 }
 
 .itensProduto strong {
-  color: var(--segundaria-color);
+    color: var(--segundaria-color);
 }
 
 .itensProduto li:hover strong {
-  border-top-width: 10px;
-  border-color: var(--segundaria-color);
-  color: var(--terceira-color);
+    border-top-width: 10px;
+    border-color: var(--segundaria-color);
+    color: var(--terceira-color);
 }
 
 .itensProduto p {
-  font-size: 1.375rem;
-  margin-bottom: 15px;
-  color: var(--quarta-color);
+    font-size: 1.375rem;
+    margin-bottom: 15px;
+    color: var(--quarta-color);
 }
 
 .preco {
-  font-size: 1.575rem;
-  font-weight: bold;
+    font-size: 1.575rem;
+    font-weight: bold;
 }
 
 .texto-sobre {
-  clear: left;
-  padding: 0 10%;
+    clear: left;
+    padding: 0 10%;
 }
 
 .texto-sobre p {
-  margin-top: 1em;
-  color: var(--quarta-color);
-  font-size: 1.3em;
+    margin-top: 1em;
+    color: var(--quarta-color);
+    font-size: 1.3em;
 }
 
 .texto-sobre p strong {
-  color: var(--segundaria-color);
+    color: var(--segundaria-color);
 }
 
 .texto-sobre p em strong {
-  font-size: 1.2em;
-  color: var(--terceira-color);
+    font-size: 1.2em;
+    color: var(--terceira-color);
 }
 
 .utensilios {
-  width: 120px;
-  float: left;
-  margin: 0 20px 20px 0;
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+/** Beneficios **/
+.galery_beneficio > h2 {
+    display: block;
+    text-align: center;
+    border: 0.05rem solid var(--quarta-color);
+    background: var(--background-primario);
+    color: var(--segundaria-color);
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-top: 0.6em;
 }
 .conteudo-beneficio {
-  display: flex;
-  justify-content: space-evenly;
-  background: var(--background-gradiente);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: var(--background-gradiente);
+    padding: 1.5rem;
 }
-.conteudo-beneficio > ul {
-  width: 13%;
-  margin: 0;
+.text-beneficios {
+    width: 30%;
+    margin: 0;
 }
 
 .itens {
-  line-height: 1.5;
+    margin-left: 15%;
 }
 
 .itens::before {
-  content: "✭";
+    content: "✭";
 }
 
 .itens:first-child {
-  font-weight: bold;
+    font-weight: bold;
 }
-.conteudo-beneficio > img {
-  opacity: 0.7;
-  transition: 400ms;
-  box-shadow: 10px 10px 5px 5px #000000;
-
-  padding: 0;
-}
-
-.conteudo-beneficio > img:hover {
-  opacity: 1;
-  box-shadow: 10px 10px 25px #000000;
+.conteudo_img {
+    width: 400px;
+    opacity: 0.7;
+    transition: 400ms;
+    box-shadow: 10px 10px 5px 5px #000000;
 }
 
-.video > iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-  padding: 0;
+.conteudo_img:hover {
+    opacity: 1;
+    box-shadow: 10px 10px 25px #000000;
+}
+
+.video {
+    width: 700px;
+    border: none;
+    margin-left: 10%;
 }
 
 .btnVoltar img {
-  cursor: pointer;
-  padding: 10px;
-  position: fixed;
-  top: 90%;
-  right: 5vw;
-  width: 5.25rem;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 90%;
+    right: 5vw;
+    width: 5.25rem;
 }
+/* 480px - 768px = tablet */
+@media (min-width: 320px) and (max-width: 768px) {
+    .galery_itens > ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .itensProduto li {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .itensProduto .itensli {
+        margin-bottom: 8%;
+    }
 
-@media screen and (max-width: 480px) {
-  .itensProduto {
-    width: 100%;
-    flex-direction: column;
-  }
-  .itensProduto li {
-    width: 80%;
-    margin-left: 10%;
-  }
-  .itensProduto .itensli {
-    margin-bottom: 8%;
-  }
-  .conteudo-beneficio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 1.5rem;
-  }
-  .conteudo-beneficio ul {
-    padding-left: 1.5rem;
-    width: 100%;
-  }
+    /** Beneficios **/
+    .conteudo-beneficio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-  .conteudo-beneficio img {
-    padding-top: 1.5rem;
-    width: auto;
-    box-shadow: none;
-  }
-
-  .conteudo-beneficio iframe {
-    padding-top: 1.5rem;
-  }
+    .conteudo_img {
+        margin-top: 5%;
+    }
+    .video {
+        width: 80%;
+        margin-left: 0;
+        margin-top: 5%;
+    }
+    .btnVoltar img {
+        top: 87%;
+    }
 }
 /* Orientation */
-@media (orientation: landscape) {
-  .itensProduto {
-    width: 100%;
-  }
-  .itensProduto img {
-    width: 100%;
-  }
-  .conteudo-beneficio {
-    padding: 5% 0 5% 0;
-    justify-content: space-around;
-  }
-  .conteudo-beneficio ul {
-    width: 30%;
-    margin: 0;
-  }
-  .conteudo-beneficio img {
-    width: 15em;
-  }
-  .conteudo-beneficio iframe {
-    width: 15em;
-  }
+@media screen and (max-width: 769px) {
+    .galery_itens ul {
+        width: 50%;
+    }
+    .galery_itens img {
+        width: 80%;
+    }
+    /** Beneficios **/
+    .conteudo-beneficio {
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-beneficios {
+        width: 50%;
+    }
+    .conteudo_img {
+        width: 250px;
+        margin: auto;
+        margin-top: 5%;
+    }
+    .video {
+        width: auto;
+        margin-top: 5%;
+        margin-left: 0;
+    }
+
+    @media screen and (min-width: 1024px) {
+        .galery_itens ul {
+            width: 95%;
+        }
+        .galery_itens img {
+            width: 80%;
+        }
+        /** Beneficios **/
+        .conteudo-beneficio {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .text-beneficios {
+            width: 100%;
+            margin: 0;
+        }
+        .conteudo_img {
+            width: 250px;
+            margin: auto;
+            margin-top: 5%;
+        }
+        .video {
+            width: auto;
+            margin-top: 5%;
+            margin-left: 0;
+        }
+    }
 }
