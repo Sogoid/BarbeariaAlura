@@ -59,21 +59,23 @@
                 <fieldset>
                     <legend>Qual horário prefere ser atendido?</legend>
                     <section class="horario">
-                        <input type="date" name="Data" id="calendario">
+                        <label for="calendario">Data
+                        <input type="date" name="Data" id="calendario"></label>
+                        <label for="chkSelect">Periodo
                         <select name="chkSelect" id="chkSelect">
                             <option value="Manhã" selected>☀️&nbsp;Manhã</option>
                             <option value="Tarde">🌅&nbsp;Tarde</option>
                             <option value="Noite">🌜&nbsp;Noite</option>
-                        </select>
+                        </select></label>
                     </section>
                 </fieldset>
                 
                 <div class="chkNewLallter">
-                    <label for="">
-                        <input type="checkbox" checked>&nbsp; Gostaria de receber nossas novidades por
+                    <label for="new-lallter">
+                        <input type="checkbox" id="new-lallter" checked>&nbsp; Gostaria de receber nossas novidades por
                         e-mail?</label>
                 </div>
-                </br>
+                
                 <div class="divBtnEnviar">
                     <input class="btnEnviar" type="submit" value="ENVIAR FORMULÁRIO">
                 </div>
