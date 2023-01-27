@@ -1,115 +1,152 @@
 @import "style.css";
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 main {
-  background: var(--background-gradiente);
-  flex-wrap: wrap;
+    background: var(--background-gradiente);
+
 }
 
 .main-contanair {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
 }
 
 .titulo-pricipal:first-letter {
-  font-weight: bold;
-  color: var(--segundaria-color);
+    font-weight: bold;
+    color: var(--segundaria-color);
 }
 
 p::first-line {
-  font-style: italic;
+    font-style: italic;
 }
 
 .mapa {
-  text-align: center;
-  padding: 0 0 0 5em;
+    text-align: center;
+    padding: 0 0 0 5em;
 }
+
 .mapa p {
-  margin: 0 0 2em;
+    margin: 0 0 2em;
 }
+
 .formDados {
-  display: flex;
-  flex-direction: column;
-  width: 45%;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
 }
+
 .formDados label {
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
+
 .formDados input {
-  padding: 5px;
-  margin-bottom: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
 }
+
 #cxTextoArea {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
+
 .chkRadio {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
 }
+
 .chkRadio label {
-  font-size: 18px;
-  font-weight: normal;
-  text-transform: none;
-  margin-right: 9%;
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: none;
+    margin-right: 9%;
 }
+
 .chkRadio input {
-  margin-left: 20px;
+    margin-left: 20px;
 }
+
 .horario {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 18px;
+    display: inline-flex;
+    flex-direction: row;
 }
 
 .horario input {
-  border-radius: 15px;
+    border-radius: 15px;
 }
 
 .horario select {
-  padding: 6px;
-  border-radius: 15px;
-  margin-left: 77px;
-  margin-bottom: 9px;
+    padding: 6px;
+    border-radius: 15px;
+    margin-bottom: 9px;
 }
 
 .chkNewLallter label {
-  font-size: 18px;
-  font-weight: normal;
-  text-transform: none;
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: none;
 }
+
 .divBtnEnviar {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
+
 .btnEnviar {
-  background: var(--segundaria-color);
-  color: var(--primaria-color);
-  width: 200px;
-  border: none;
-  border-radius: 20px;
-  transition: 1s all;
-  cursor: pointer;
+    background: var(--segundaria-color);
+    color: var(--primaria-color);
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    transition: 1s all;
+    cursor: pointer;
 }
+
 .btnEnviar:hover {
-  background: var(--hover-color-bg);
-  transform: scale(1.2);
+    background: var(--hover-color-bg);
+    transform: scale(1.2);
 }
+
 .tabHorario {
-  padding: 5px;
-  border: 1px solid #000000;
-  margin-bottom: 20px;
-  margin-left: 43%;
+    padding: 5px;
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+    margin-left: 43%;
 }
+
 .tabHorario thead {
-  color: var(--primaria-color);
-  font-weight: bold;
-  background: var(--background-primario);
+    color: var(--primaria-color);
+    font-weight: bold;
+    background: var(--background-primario);
 }
+
 .tabHorario td {
-  border: 1px solid #000000;
-  padding: 6px 15px;
+    border: 1px solid #000000;
+    padding: 6px 15px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .main-contanair {
+        flex-direction: column;
+    }
+
+    .cabecalho h1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .mapa {
+        width: 50%;
+    }
 }
