@@ -2,28 +2,28 @@
 
 * {
     box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 :root {
-  /* Palheta de cores*/
-  --primaria-color: white;
-  --segundaria-color: chocolate;
-  --hover-color-bg: orange;
-  --terceira-color: red;
-  --quarta-color: black;
-  --backgroud-color: rgba(0, 0, 0, 0.8);
-  --backgroud-color-Beneficios: #88888888;
-  --border-color: black;
-  --background-gradiente: linear-gradient(#fefefe, #88888888);
-  /*Final da Palheta de cores*/
-  /* Backgrounds*/
-  --background-primario: url("../img/bg.jpg");
+    /* Palheta de cores*/
+    --primaria-color: white;
+    --segundaria-color: chocolate;
+    --hover-color-bg: orange;
+    --terceira-color: red;
+    --quarta-color: black;
+    --backgroud-color: rgba(0, 0, 0, 0.8);
+    --backgroud-color-Beneficios: #88888888;
+    --border-color: black;
+    --background-gradiente: linear-gradient(#fefefe, #88888888);
+    /*Final da Palheta de cores*/
+    /* Backgrounds*/
+    --background-primario: url("../img/bg.jpg");
 }
 
 body {
-  width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
