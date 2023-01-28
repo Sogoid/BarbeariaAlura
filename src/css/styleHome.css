@@ -193,13 +193,13 @@
 .conteudo-beneficio {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background: var(--background-gradiente);
     padding: 1.5rem;
 }
 
 .text-beneficios {
-    width: 30%;
+    width: 25%;
     margin: 0;
 }
 
@@ -216,7 +216,7 @@
 }
 
 .conteudo_img {
-    width: 400px;
+    width: 25%;
     opacity: 0.7;
     transition: 400ms;
     box-shadow: 10px 10px 5px 5px #000000;
@@ -228,9 +228,9 @@
 }
 
 .video {
-    width: 700px;
+    width: 25%;
     border: none;
-    margin-left: 5%;
+
 }
 
 .btnVoltar img {
@@ -301,13 +301,8 @@
     }
 
     .conteudo-beneficio ul {
-        width: 80%;
+        width: 35%;
 
-    }
-
-    .conteudo_img {
-        width: 30%;
-        height: 50%;
     }
 
     .video {
