@@ -131,11 +131,15 @@ fieldset {
     transform: scale(1.2);
 }
 
+.tabsection {
+    display: flex;
+    justify-content: center;
+}
+
 .tabHorario {
     padding: 5px;
     border: 1px solid #000000;
-    margin-bottom: 20px;
-    margin-left: 43%;
+
 }
 
 .tabHorario thead {
@@ -147,6 +151,15 @@ fieldset {
 .tabHorario td {
     border: 1px solid #000000;
     padding: 6px 15px;
+}
+
+.btnVoltar img {
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 85%;
+    right: 5vw;
+    width: 5.25rem;
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
@@ -180,8 +193,27 @@ fieldset {
         flex-direction: column;
     }
 
+    .tabsection {
+
+        margin-bottom: 15px;
+    }
+
     .tabHorario {
         margin: 0;
-        align-items: center;
+    }
+
+
+    .btnVoltar img {
+        top: 83%;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1280px) {
+    .tabsection {
+        margin-bottom: 15px;
+    }
+
+    .btnVoltar img {
+        top: 75%;
     }
 }
